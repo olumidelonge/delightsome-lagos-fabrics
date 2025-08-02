@@ -61,7 +61,23 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				fabric: {
+					gold: 'hsl(var(--fabric-gold))',
+					earth: 'hsl(var(--fabric-earth))',
+					terracotta: 'hsl(var(--fabric-terracotta))',
+					green: 'hsl(var(--fabric-green))',
+					blue: 'hsl(var(--fabric-blue))'
 				}
+			},
+			backgroundImage: {
+				'gradient-sunset': 'var(--gradient-sunset)',
+				'gradient-earth': 'var(--gradient-earth)',
+				'gradient-fabric': 'var(--gradient-fabric)'
+			},
+			transitionProperty: {
+				'smooth': 'var(--transition-smooth)',
+				'bounce': 'var(--transition-bounce)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
