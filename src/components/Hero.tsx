@@ -1,13 +1,10 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-fabrics.jpg";
-
 const Hero = () => {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <div 
-        className="absolute inset-0 bg-cover bg-center z-0"
-        style={{ backgroundImage: `url(${heroImage})` }}
-      >
+  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <div className="absolute inset-0 bg-cover bg-center z-0" style={{
+      backgroundImage: `url(${heroImage})`
+    }}>
         <div className="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/60 to-transparent"></div>
       </div>
       
@@ -27,11 +24,7 @@ const Hero = () => {
             <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-8 py-6 text-lg rounded-xl">
               Explore Collection
             </Button>
-            <Button 
-              variant="outline" 
-              size="lg" 
-              className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary font-semibold px-8 py-6 text-lg rounded-xl"
-            >
+            <Button variant="outline" size="lg" className="border-primary-foreground font-semibold px-8 py-6 text-lg rounded-xl text-zinc-50 bg-stone-900 hover:bg-stone-800">
               Visit Our Store
             </Button>
           </div>
@@ -43,8 +36,6 @@ const Hero = () => {
           <div className="w-1 h-3 bg-primary-foreground rounded-full mt-2 animate-pulse"></div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
